@@ -1,0 +1,373 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* determine rem value for functions */
+/* rem Function */
+/* rem Line Height */
+/* Breakpoint Variables */
+/* Masonry Dimension Variables */
+/* Site Colors */
+.promoWrap {
+  width: auto;
+  margin: 0 auto;
+  overflow-y: hidden;
+  width: 765px;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+.promoWrap * {
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.promoItem {
+  float: left;
+  position: relative;
+  overflow: visible;
+  width: 120px;
+  margin-right: 25px;
+}
+.promoItem:first-child {
+  margin-left: 50px;
+}
+.promoItem:last-child {
+  margin-right: 0;
+}
+
+.promoItem:nth-child(1) .promoImage {
+  left: 16px;
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
+  z-index: 2;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.promoItem:nth-child(1) .inactiveMessage {
+  position: relative;
+  left: 5px;
+  z-index: 4;
+}
+
+.promoItem:nth-child(2) .promoImage {
+  left: -15px;
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  z-index: 3;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.promoItem:nth-child(2) .inactiveMessage {
+  position: relative;
+  left: 8px;
+  z-index: 4;
+}
+
+.promoItem:nth-child(3) .promoImage {
+  left: 10px;
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+  z-index: 2;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.promoItem:nth-child(3) .inactiveMessage {
+  position: relative;
+  left: -2px;
+  z-index: 4;
+}
+
+.promoItem:nth-child(4) .promoImage {
+  left: -33px;
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  z-index: 1;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.promoItem:nth-child(4) .inactiveMessage {
+  position: relative;
+  left: -6px;
+  z-index: 4;
+}
+
+.promoItem:nth-child(5) .promoImage {
+  left: -22px;
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(7deg);
+  z-index: 2;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.promoItem:nth-child(5) .inactiveMessage {
+  position: relative;
+  left: -20px;
+  z-index: 4;
+}
+
+.promoImage {
+  float: left;
+  position: relative;
+  cursor: pointer;
+  top: -20px;
+}
+
+.promoContainer {
+  position: absolute;
+  top: 105px;
+  opacity: 0;
+}
+.inactive .promoContainer {
+  display: none;
+}
+.promoContainer .btn-primary--pink {
+  margin-top: 7px;
+}
+
+.promoCode {
+  line-height: 2.3;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.active .inactiveMessage {
+  display: none;
+}
+
+.inactiveMessage {
+  box-sizing: border-box;
+  padding: 10px 10px 6px 10px;
+  opacity: 0;
+  height: 65px;
+  float: left;
+  background-color: #72B4AC;
+  border: 1px solid #70b3ab;
+  -webkit-box-shadow: rgba(136, 136, 136, 0.5) 0px 5px 2px -4px;
+  -moz-box-shadow: rgba(136, 136, 136, 0.5) 0px 5px 2px -4px;
+  box-shadow: rgba(136, 136, 136, 0.5) 0px 5px 2px -4px;
+  border-radius: 5px;
+}
+.inactiveMessage p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #F9F5E3;
+  font-family: 'Raleway', Arial, sann-serif;
+}
+.inactiveMessage span {
+  font-size: 16px;
+  padding-top: 7px;
+  display: block;
+}
+.inactiveMessage:before {
+  opacity: 1;
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background-color: #6A431E;
+}
+
+.btn-primary--pink {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F53B6A;
+  border: 2px solid #F53B6A;
+  padding: 4px 18px;
+  text-decoration: none;
+}
+.btn-primary--pink:hover {
+  text-decoration: none;
+  color: #a80931;
+  border: 2px solid #a80931;
+}
+
+.promoText {
+  width: 730px;
+  margin: 0 auto;
+}
+
+.hgroup {
+  width: 520px;
+  margin: 0 auto;
+}
+
+.heading__promo-h1, .heading__promo-h2, .text__body-copy {
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.headding__promo-h1, .heading__promo-h2 {
+  text-transform: uppercase;
+}
+
+.heading__promo-h1 {
+  color: #626262;
+  float: left;
+  font-size: 64px;
+}
+
+.heading__promo-h2 {
+  color: #fff;
+  background-color: #000;
+  padding: 8px 20px;
+  float: left;
+  top: 11px;
+  position: relative;
+  margin-left: 12px;
+}
+
+.text__body-copy {
+  margin: 24px 0 30px 0;
+  line-height: 1.3;
+  clear: both;
+  text-align: center;
+}
+
+.social {
+  width: 450px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+.btn-cta {
+  float: left;
+  margin-right: 20px;
+}
+.btn-cta * {
+  float: left;
+}
+.btn-cta span {
+  position: relative;
+  top: 10px;
+  margin-left: 8px;
+}
+
+.share__social {
+  float: left;
+}
+.share__social p {
+  font-family: "Raleway", Arial, sans-serif;
+  margin-bottom: 5px;
+}
+
+.share__social-icons {
+  margin: 0 auto;
+  width: 85px;
+}
+.share__social-icons .share__icon {
+  cursor: pointer;
+  margin-right: 3px;
+}
+.share__social-icons a:last-child {
+  margin-right: 0;
+}
+
+#legalContainer {
+  height: 0;
+  overflow: hidden;
+}
+
+.cheer-stripes {
+  position: relative;
+  width: 100%;
+  height: 17px;
+  background-image: url("/resources/store/images/expressionery/special-offers/5-days-of-cheer/cheer-stripes.png");
+  background-repeat: repeat-x;
+  z-index: 100;
+}
+.cheer-stripes:first-of-type {
+  -webkit-box-shadow: rgba(136, 136, 136, 0.5) 0px 5px 2px -4px;
+  -moz-box-shadow: rgba(136, 136, 136, 0.5) 0px 5px 2px -4px;
+  box-shadow: rgba(136, 136, 136, 0.5) 0px 5px 2px -4px;
+}

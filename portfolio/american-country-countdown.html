@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html lang="en" class="no-js" ng-app="portfolioApp">
+<head>
+	<!-- First of all, thanks for caring enough about the quality of my code to check out my source code. I care a lot about my code as well, my goal is to future proof it and make it as extensible as possible. You'll notice some verbose class names, I'm making use of the Block Elelment Modifier method of structuring my CSS; More on that here http://bit.ly/BEM-CSS. There's also a liberal use or the 'rem', those are calculated by a clever, and custom, SCSS function and numbers proveded by modularscale.com. I love exploring new technologies and would LOVE to find a place of work where I can combine my passion for design and development into one glittery full-stack-unicorn package. Are you the company that I can do that with?! -->
+	<title>American Country Countdown website redesign | domwashburn.com</title>
+	<meta name="description" content="My name is Dominick Washburn, I'm a Graphic Designer and Front End Web Developer: this is my portfolio. I have a degree in Graphic Design, Interactive Design and Advertising. I'm searching for a full time job and freelancing until I find one." >
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="../assets/css/style.css">
+
+	<!-- javascript -->
+	<script src="../assets/scripts/modernizr.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Adobe Typekit -->
+	<script type="text/javascript" src="//use.typekit.net/ufp1vpz.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body ng-controller="portfolioController">
+	<div class="overlay overlay-hugeinc">
+		<nav>
+			<ul class="nav--main">
+				<li class="nav__btn--active" ng-repeat="link in nav"><a href="{{link.url}}" class="nav__link">{{link.title}}</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="main-content">
+		<header id="nav-trigger">
+			<div class="content nav-container">
+				<a id="trigger-overlay" class="navicon-button x">
+			      <div class="navicon"></div>
+			    </a>
+			</div>
+		</header>
+		<section class="grid">
+			<section class="content portfolio-item" itemscope itemtype="">
+				<div class="col-2-3">
+					<ul class="slider">
+						<li>
+							<a href="../assets/images/slide--acc-top-40-desktop.jpg" itemProp="" data-imagelightbox="a">
+								<img src="../assets/images/slide--acc-top-40-desktop.jpg" class="slider__slide" alt="American Country Countdown Top 40 Desktop"/>
+							</a>
+						</li>
+						<li>
+							<a href="../assets/images/slide--acc-top-40-tablet.jpg" data-imagelightbox="a">
+								<img src="../assets/images/slide--acc-top-40-tablet.jpg" class="slider__slide" alt="American Country Countdown Top 40 Tablet"/>
+							</a>
+						</li>
+						<li>
+							<a href="../assets/images/slide--acc-top-40-mobile-01.jpg" data-imagelightbox="a">
+								<img src="../assets/images/slide--acc-top-40-mobile-01.jpg" class="slider__slide" alt="American Country Countdown Top 40 Mobile"/>
+							</a>
+						</li>
+						<li>
+							<a href="../assets/images/slide--acc-top-40-mobile-02.jpg" data-imagelightbox="a">
+								<img src="../assets/images/slide--acc-top-40-mobile-02.jpg" class="slider__slide" alt="American Country Countdown Top 40 Detail 1"/>
+							</a>
+						</li>
+						<li>
+							<a href="../assets/images/slide--acc-top-40-mobile-03.jpg" data-imagelightbox="a">
+								<img src="../assets/images/slide--acc-top-40-mobile-03.jpg" class="slider__slide" alt="American Country Countdown Top 40 Detail 2"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<article class="portfolio-item__article col-1-3 asside--right">
+					<h3>American Country Countdown Top 40</h3>
+					<h6>website redesign</h6>
+					<p>The goal with this redesign was to maintain a consistent experience across all devices and screen sizes as well as provide an easy way for users to connect via social media.</p>
+				</article>
+			</section>
+		</section>
+		<section id="contact" class="grid">
+			<div class="content">
+				<h2>Contact</h2>
+				<div class="col-1-3">
+					<p>You can use the form to get in touch with me via email. It will go straight to my phone so my response time should be very fast. If you would prefer to call or text message me, I’ve listed my phone number below. I’ve also provided a link to my Linked In profile.</p>
+					<p>phone: 520 906 9760</p>
+					<p>Linked In: <a href="http://bit.ly/domwashburn-li" target="blank">bit.ly/domwashburn-li</a></p>
+				</div>
+				<div class="col-2-3">
+					<h4>Just fill out the form to get in touch</h4>
+					<form class="form" name="contactForm" action="contact-form.php" method="post">
+						<noscript>
+								<p><input class="form__field" type="hidden" name="nojs" id="nojs" /></p>
+						</noscript>
+						<label class="form__label" for="firstname">First name (required)</label>
+						<input class="form__field" type="text" id="firstname" name="firstname" />
+						<label class="form__label" for="lastname">Last name (required)</label>
+						<input class="form__field" type="text" id="lastname" name="lastname" />
+						<label class="form__label" for="email">email address (required)</label>
+						<input class="form__field" type="text" id="email" name="email" />
+						<label class="form__label" for="comment">Comment (required)</label>
+						<textarea class="form__field" type="text" id="comment" name="comment"></textarea>
+						<input class="form__btn" type="submit" name="submit" id="submit" value="Send" />
+
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+	</footer>
+
+	<!-- All scripts except modernizer concatenated and minified  -->
+	<script src="../assets/scripts/angular.min.js"></script>
+	<!--<script src="../assets/scripts/portfolioApp.js"></script>-->
+	<script src="../assets/scripts/portfolioController.js"></script>
+	<script src="../assets/scripts/scripts.min.js"></script>
+	
+	
+	<script>
+		$( function()
+		{
+			var activityIndicatorOn = function()
+				{
+					$( '<div id="imagelightbox-loading"><div></div></div>' ).appendTo( 'body' );
+				},
+				activityIndicatorOff = function()
+				{
+					$( '#imagelightbox-loading' ).remove();
+				},
+
+				overlayOn = function()
+				{
+					$( '<div id="imagelightbox__overlay"></div>' ).appendTo( 'body' );
+				},
+				overlayOff = function()
+				{
+					$( '#imagelightbox__overlay' ).remove();
+				},
+
+				closeButtonOn = function( instance )
+				{
+					$( '<a href="#" id="imagelightbox-close">Close</a>' ).appendTo( 'body' ).on( 'click touchend', function(){ $( this ).remove(); instance.quitImageLightbox(); return false; });
+				},
+				closeButtonOff = function()
+				{
+					$( '#imagelightbox-close' ).remove();
+				},
+
+				captionOn = function()
+				{
+					var description = $( 'a[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"] img' ).attr( 'alt' );
+					if( description.length > 0 )
+						$( '<div id="imagelightbox-caption">' + description + '</div>' ).appendTo( 'body' );
+				},
+				captionOff = function()
+				{
+					$( '#imagelightbox-caption' ).remove();
+				},
+
+				navigationOn = function( instance, selector )
+				{
+					var images = $( selector );
+					if( images.length )
+					{
+						var nav = $( '<div id="imagelightbox-nav"></div>' );
+						for( var i = 0; i < images.length; i++ )
+							nav.append( '<a href="#"></a>' );
+
+						nav.appendTo( 'body' );
+						nav.on( 'click touchend', function(){ return false; });
+
+						var navItems = nav.find( 'a' );
+						navItems.on( 'click touchend', function()
+						{
+							var $this = $( this );
+							if( images.eq( $this.index() ).attr( 'href' ) != $( '#imagelightbox' ).attr( 'src' ) )
+								instance.switchImageLightbox( $this.index() );
+
+							navItems.removeClass( 'active' );
+							navItems.eq( $this.index() ).addClass( 'active' );
+
+							return false;
+						})
+						.on( 'touchend', function(){ return false; });
+					}
+				},
+				navigationUpdate = function( selector )
+				{
+					var items = $( '#imagelightbox-nav a' );
+					items.removeClass( 'active' );
+					items.eq( $( selector ).filter( '[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"]' ).index( selector ) ).addClass( 'active' );
+				},
+				navigationOff = function()
+				{
+					$( '#imagelightbox-nav' ).remove();
+				};
+
+
+			//	WITH ACTIVITY INDICATION
+			var selectorA = 'a';
+			var instanceA = $( selectorA ).imageLightbox(
+			{
+				onStart:	 function() { navigationOn( instanceA, selectorA ); overlayOn(); },
+				onEnd:		 function() { navigationOff(); activityIndicatorOff(); overlayOff(); },
+				onLoadStart: function() { activityIndicatorOn(); },
+				onLoadEnd:	 function() { navigationUpdate( selectorA ); activityIndicatorOff(); }
+			});
+
+		});
+	</script>
+	<script>
+		window.addEventListener('load', function() {
+		    new FastClick(document.body);
+		}, false);
+	</script>
+	<script>
+		$("#nav-trigger").stick_in_parent();
+	</script>
+	<script>
+	    $(document).ready(function(){
+	        $('.slider').slick({
+	            slide: "li"
+	        });
+	    });
+	</script>
+</body>
+</html>
